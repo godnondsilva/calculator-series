@@ -14,7 +14,8 @@ The calculator series has 4 types of calculators:
 
 # Project URL:
 
-https://github.com/godnondsilva/calculator-series/
+Source: https://github.com/godnondsilva/calculator-series/
+Live: https://godnondsilva.github.io/calculator-series/
 
 -----------------------------------------------------------------------------
 
