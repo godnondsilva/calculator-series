@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator Series - Age</title>
+    <!-- Icon -->
+    <link rel="icon" href="icon.ico" />
+
+    <script type="text/javascript" src="js/age.js"></script>
+    <!-- bootstrap viewport [for mobile support] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link type="text/css" rel="stylesheet" href="css/age.css" />
+
+  </head>
+    <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Calculator Series</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse "id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto mr-auto">
+            <a class="nav-item nav-link" href="index.html">Simple</a>
+            <a class="nav-item nav-link" href="adv.html">Advanced</a>
+            <a class="nav-item nav-link active" href="">Age</a>
+            <a class="nav-item nav-link" href="percent.html">Percentage</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Advanced Calculator -->
+      <main>
+          <div class="box container-fluid">
+            <span id="header">Age Calculator</span>
+            <hr>
+            <div id="rows">
+              <div class="row1">
+                <p>Do you want to know your age?</p>
+              </div>
+
+              <div class="row2">
+                <p>Enter your name: </p>
+                <input type="text" class="buttonTypeUse" id="name" maxlength="12" placeholder="name e.g. bob" style="width: 150px;">
+              </div>
+
+              <div class="row3">
+                <p>Enter birth day: </p>
+                <input type="text" class="buttonTypeUse" id="day" maxlength="2" placeholder="day e.g. 12" style="width: 150px;">
+              </div>
+
+              <div class="row4">
+                <p>Enter birth month: </p>
+                <input type="text" class="buttonTypeUse" id="month" maxlength="2" placeholder="month e.g. 6" style="width: 150px;">
+              </div>
+
+              <div class="row5">
+                <p>Enter birth year: </p>
+                <input type="text" class="buttonTypeUse" id="year" maxlength="4" placeholder="year e.g. 1996" style="width: 150px;">
+              </div>
+
+              <div class="row6">
+                <button class="buttonTypeResult b1" onclick="printResult()">Get result</button>
+                <button class="buttonTypeResult b2" onclick="resetResult()">Reset result</button>
+              </div>
+
+              <div class="row7">
+                <input disabled class="ans" id="resultValue"></input>
+                <textarea disabled name="res" class="ans" id="resultValue2" rows="2"></textarea>
+                <input disabled class="ans" id="resultValue3"></input>
+              </div>
+            </div>
+          <hr>
+          <div class="lower">
+            <p id="footer">Created with ❤ by <a href="https://github.com/godnondsilva">Godnon Dsilva</a></p>
+          </div>
+        </div>
+    </main>
+  </body>
+</html>

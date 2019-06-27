@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 40px;
+  background-color: #fff;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+}
+
+main > div > #header {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: -5px;
+  display: flex;
+}
+#header:hover {
+  cursor: default;
+}
+
+.box {
+  width: 350px !important;
+  height: 550px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+  text-align: left;
+  border-radius: 1%;
+}
+
+.ans {
+  margin: 14.2px 0 0 0;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  width: 300px;
+  cursor: default;
+  resize: none;
+}
+
+p {
+  display: inline-block;
+}
+
+p:hover {
+  cursor: default;
+}
+
+#footer:hover {
+  cursor: default;
+}
+
+#footer {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+.buttonTypeUse {
+  border: 1px solid #000;
+  padding-left: 4px;
+}
+
+.buttonTypeUse:hover {
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.buttonTypeResult {
+  display: inline-block;
+  justify-content: center;
+  width: 150px;
+  border: none;
+  border: 1px solid #000;
+  transition: all 0.1s;
+  border-radius: 2%;
+}
+
+.buttonTypeResult:hover {
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+
+.b1 {
+  color: #fff;
+  margin-left: 5px;
+  background-color: #4285f4;
+}
+
+.b1:hover {
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+
+
+.b2 {
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Bootstrap edits */
+.navbar-collapse {
+  margin-right: 170px;
+}
+
+.bg-dark {
+  background-color: #323232 !important;
+}

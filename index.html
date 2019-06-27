@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator Series - Simple</title>
+    <!-- Icon -->
+    <link rel="icon" href="icon.ico" />
+    <!-- JS files -->
+    <script type="text/javascript" src="js/simple.js"></script>
+    <!-- bootstrap viewport [for mobile support] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link type="text/css" rel="stylesheet" href="css/simple.css" />
+  </head>
+    <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Calculator Series</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse "id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto mr-auto">
+            <a class="nav-item nav-link active" href="">Simple</a>
+            <a class="nav-item nav-link" href="adv.html">Advanced</a>
+            <a class="nav-item nav-link" href="age.html">Age</a>
+            <a class="nav-item nav-link" href="percent.html">Percentage</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Simple Calculator -->
+      <main>
+        <div class="box container-fluid">
+          <span id="header">Simple Calculator</span>
+          <div class="display">
+            <input type="text" maxlength="10" id="ans" placeholder="0" disabled >
+          </div>
+          <div id="buttons">
+            <div class="row1">
+              <button class="button other" onclick="addOpenBracket()">(</button>
+              <button class="button other" onclick="addCloseBracket()">)</button>
+              <button class="button erase other" onclick="clearLast()"><=</button>
+              <button class="button other" onclick="clearall()">AC</button>
+            </div>
+
+            <div class="row2">
+              <button class="button num" onclick="addNumber(7)">7</button>
+              <button class="button num" onclick="addNumber(8)">8</button>
+              <button class="button num" onclick="addNumber(9)">9</button>
+              <button class="button other" onclick="addTask('/')">/</button>
+            </div>
+
+            <div class="row3">
+              <button class="button num" onclick="addNumber(4)">4</button>
+              <button class="button num" onclick="addNumber(5)">5</button>
+              <button class="button num" onclick="addNumber(6)">6</button>
+              <button class="button other" onclick="addTask('*')">*</button>
+            </div>
+
+            <div class="row4">
+              <button class="button num" onclick="addNumber(1)">1</button>
+              <button class="button num" onclick="addNumber(2)">2</button>
+              <button class="button num" onclick="addNumber(3)">3</button>
+              <button class="button other" onclick="addTask('-')">-</button>
+            </div>
+
+            <div class="row5">
+              <button class="button num" onclick="dot()">.</button>
+              <button class="button num" onclick="addNumber(0)">0</button>
+              <button class="button equal other" onclick="calc()">=</button>
+              <button class="button other" onclick="addTask('+')">+</button>
+            </div>
+          </div>
+        <hr>
+        <p id="footer">Created with ❤ by <a href="https://github.com/godnondsilva">Godnon Dsilva</a></p>
+      </div>
+    </main>
+  </body>
+</html>
