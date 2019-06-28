@@ -36,13 +36,13 @@ const addNumber = (val) => {
 }
 
 const addTask = (task) => {
-  if(errOccured) {
-      clearall();
-      document.getElementById("ans").value = "0" + task;
+  if(canUseTask) {
+      document.getElementById("ans").value += task;
   } else if(document.getElementById("ans").value < 1 && canUseTask){
       document.getElementById("ans").value = "0" + task;
-  } else if(canUseTask) {
-      document.getElementById("ans").value += task;
+  } else if(errOccured) {
+      clearall();
+      document.getElementById("ans").value = "0" + task;
   }
   canUseDot = true;
   canUseTask = false;
@@ -85,12 +85,14 @@ const dot = () => {
     //var lastValue = document.getElementById("ans").value.substring(0,document.getElementById("ans").value.length-1);
     if(errOccured) {
         clearall();
+        canUseDot = false;
         document.getElementById("ans").value += ".";
     } else if(canUseDot) {
       document.getElementById("ans").value += ".";
       canUseDot = false;
 
     } else {
+      canUseDot = false;
       console.log('WARNING: DOT ALREADY PRESENT!');
     }
 }
