@@ -35,4 +35,3 @@ The calculator series has 4 types of calculators:
 - Bootstrap 4
 - jQuery
 
------------------------------------------------------------------------------
