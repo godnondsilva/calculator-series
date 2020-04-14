@@ -34,4 +34,3 @@ The calculator series has 4 types of calculators:
 - JavaScript ES6+ & DOM Manipulation
 - Bootstrap 4
 - jQuery
-
