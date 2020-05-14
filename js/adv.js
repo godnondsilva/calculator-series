@@ -107,7 +107,6 @@ const calc = () => {
 }
 
 const dot = () => {
-    //var lastValue = document.getElementById("ans").value.substring(0,document.getElementById("ans").value.length-1);
     if(errOccured) {
         clearall();
         document.getElementById("ans").value += ".";
