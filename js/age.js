@@ -18,7 +18,7 @@ const printResult = () => {
   var printDay;
 
   var presYear = date.getFullYear();
-  var presMonth = date.getMonth()+1; // starts from 0
+  var presMonth = date.getMonth()+1;
   var presDay = date.getDate();
 
   if(presMonth == getMonth)
