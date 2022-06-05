@@ -11,12 +11,13 @@ main {
   justify-content: center;
 }
 
-main > div > #header {
+main>div>#header {
   text-align: left;
   margin-top: 30px;
   margin-bottom: -5px;
   display: flex;
 }
+
 #header:hover {
   cursor: default;
 }
@@ -25,8 +26,8 @@ main > div > #header {
   width: 350px !important;
   height: 550px;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   text-align: left;
   border-radius: 1%;
 }
@@ -69,7 +70,7 @@ p:hover {
 }
 
 .buttonTypeUse:hover {
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
 
 .buttonTypeResult {
@@ -83,7 +84,7 @@ p:hover {
 }
 
 .buttonTypeResult:hover {
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
 
 .b1 {
@@ -93,7 +94,7 @@ p:hover {
 }
 
 .b1:hover {
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
 
 

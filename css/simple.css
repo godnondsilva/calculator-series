@@ -11,13 +11,14 @@ main {
   justify-content: center;
 }
 
-main > div > #header {
+main>div>#header {
   text-align: left;
   margin-left: 10px;
   margin-top: 30px;
   margin-bottom: -5px;
   display: flex;
 }
+
 #header:hover {
   cursor: default;
 }
@@ -26,8 +27,8 @@ main > div > #header {
   width: 350px !important;
   height: 550px;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   text-align: center;
   border-radius: 1%;
 }
@@ -49,12 +50,12 @@ main > div > #header {
   text-align: right;
   border: none;
   border-radius: 2% 2%;
-  border: 2px solid rgba(0,0,0,0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 #ans:focus {
   outline: none;
-  border: 1px solid rgba(0,0,0,0.6) !important;
+  border: 1px solid rgba(0, 0, 0, 0.6) !important;
 }
 
 ::placeholder {
@@ -69,16 +70,16 @@ main > div > #header {
   margin: 5px;
   transition: box-shadow 0.2s;
   border-radius: 1%;
-  border: 0.1px solid rgba(0,0,0,0.1);
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button:focus {
   outline: none;
-  border: 1px solid rgba(0,0,0,0.4) !important;
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
 }
 
 .num {
@@ -86,7 +87,7 @@ main > div > #header {
 }
 
 .num:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .other {
@@ -94,7 +95,7 @@ main > div > #header {
 }
 
 .other:hover {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .equal {
@@ -109,7 +110,7 @@ main > div > #header {
 }
 
 input:hover {
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 #footer {
